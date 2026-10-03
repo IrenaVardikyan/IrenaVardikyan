@@ -30,7 +30,10 @@
       <h1 class="font-serif text-4xl md:text-5xl font-semibold">Say hello</h1>
       <p class="mt-5 text-lg leading-relaxed text-ink/80">Questions about the book, or just want to share what you thought? Send a message and I'll reply as soon as I can.</p>
     </div>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="post" class="md:col-span-3 space-y-5">
+    <form action="https://api.web3forms.com/submit" method="post" class="md:col-span-3 space-y-5">
+      <input type="hidden" name="access_key" value="bc2eda0f-7a5d-4de1-b3bd-1dae349746e9">
+      <input type="hidden" name="subject" value="New message from the website">
+      <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
       <div>
         <label for="name" class="block text-sm font-medium mb-1.5">Name</label>
         <input id="name" name="name" type="text" required class="w-full px-4 py-3 rounded-lg border border-ink/20 bg-white focus:outline-none focus:ring-2 focus:ring-accent">
@@ -43,7 +46,7 @@
         <label for="message" class="block text-sm font-medium mb-1.5">Message</label>
         <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 rounded-lg border border-ink/20 bg-white focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
       </div>
-      <button type="submit" class="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-ink transition-colors">Send message</button>
+      <button type="submit" class="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-ink transition-colors disabled:opacity-60">Send message</button>
     </form>
   </main>
   <footer class="max-w-5xl w-full mx-auto px-6 py-10 mt-auto text-sm text-ink/60 border-t border-ink/10 flex flex-wrap gap-4 justify-between">
