@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Gate of Ararich | Irena</title>
+  <meta name="description" content="The Gate of Ararich: two chosen teens, one dangerous secret across worlds. A young adult fantasy by Irena.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Fraunces', 'Georgia', 'serif'], sans: ['"DM Sans"', 'system-ui', 'sans-serif'] },
+      colors: { ink: '#1b2430', paper: '#f6f7f5', accent: '#1f5c5c' }
+    } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-paper text-ink font-sans antialiased min-h-screen flex flex-col">
+  <header class="max-w-5xl w-full mx-auto px-6 py-8 flex flex-wrap gap-4 justify-between items-center">
+    <a href="index.html" class="font-serif text-xl font-semibold">Irena</a>
+    <nav class="flex gap-8 text-sm font-medium">
+      <a href="index.html" class="hover:text-accent">Home</a>
+      <a href="book.html" aria-current="page" class="underline underline-offset-8 decoration-accent decoration-2">The Book</a>
+      <a href="contact.html" class="hover:text-accent">Contact</a>
+    </nav>
+  </header>
+  <main class="max-w-5xl w-full mx-auto px-6 pt-8 pb-20 grid md:grid-cols-5 gap-12 items-start">
+    <img src="images/cover.jpg" alt="Cover of The Gate of Ararich" class="md:col-span-2 w-56 md:w-full max-w-xs mx-auto shadow-2xl rounded bg-ink/10 aspect-[2/3] object-cover">
+    <article class="md:col-span-3">
+      <h1 class="font-serif text-4xl md:text-5xl font-semibold leading-tight">The Gate of Ararich</h1>
+      <p class="mt-3 text-lg italic text-accent">Two Chosen Teens. One Dangerous Secret Across Worlds.</p>
+      <div class="mt-8 space-y-5 text-lg leading-relaxed text-ink/80 max-w-prose">
+        <p>What if the world you trust is only one fragment of a vast, hidden lattice of realities&hellip; and its collapse has already begun?</p>
+        <p class="italic">Olivia never wanted to be chosen. Andre never believed in destiny.</p>
+        <p>Yet when a strange artifact finds them, their lives split apart, pulling them beyond Earth into parallel realms, forgotten civilizations, and distant planets where the laws of existence twist into something unrecognizable.</p>
+        <p>Hunted by the relentless Consortium and guided by forces that speak in riddles, Olivia and Andre move through shifting dimensions where worlds flicker out, timelines fracture, and entire realities struggle to stay alive. To save what remains, they must journey through starborn empires, forgotten races, and speak with angels who have witnessed the rise and ruin of countless worlds. With every encounter, the fabric of reality thins, revealing a truth that was never meant to surface.</p>
+        <p class="italic">The question is no longer what the Gate of Ararich is. It is what the universe will become when the Gate finally opens.</p>
+      </div>
+      <a href="https://www.amazon.ca/Gate-Ararich-Chosen-Dangerous-Worlds/dp/106808491X" class="inline-block mt-10 bg-accent text-white px-7 py-3.5 rounded-full font-medium hover:bg-ink transition-colors">Buy on Amazon</a>
+    </article>
+  </main>
+  <footer class="max-w-5xl w-full mx-auto px-6 py-10 mt-auto text-sm text-ink/60 border-t border-ink/10 flex flex-wrap gap-4 justify-between">
+    <p>&copy; <span id="year">2026</span> Irena. All rights reserved.</p>
+    <p class="flex gap-6">
+      <a href="https://www.instagram.com/ivardikyan/" target="_blank" rel="noopener" class="hover:text-accent">Instagram</a>
+      <!-- Replace the # below with the Goodreads link when it's ready -->
+      <a href="#" target="_blank" rel="noopener" class="hover:text-accent">Goodreads</a>
+    </p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

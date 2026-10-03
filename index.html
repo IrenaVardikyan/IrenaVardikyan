@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Irena | Author of The Gate of Ararich</title>
+  <meta name="description" content="Irena is a lawyer and author of The Gate of Ararich, a young adult fantasy about parallel worlds and magical adventures.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Fraunces', 'Georgia', 'serif'], sans: ['"DM Sans"', 'system-ui', 'sans-serif'] },
+      colors: { ink: '#1b2430', paper: '#f6f7f5', accent: '#1f5c5c' }
+    } } }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-paper text-ink font-sans antialiased min-h-screen flex flex-col">
+  <header class="max-w-5xl w-full mx-auto px-6 py-8 flex flex-wrap gap-4 justify-between items-center">
+    <a href="index.html" class="font-serif text-xl font-semibold">Irena</a>
+    <nav class="flex gap-8 text-sm font-medium">
+      <a href="index.html" aria-current="page" class="underline underline-offset-8 decoration-accent decoration-2">Home</a>
+      <a href="book.html" class="hover:text-accent">The Book</a>
+      <a href="contact.html" class="hover:text-accent">Contact</a>
+    </nav>
+  </header>
+  <main class="max-w-5xl w-full mx-auto px-6 pt-8 pb-20">
+    <section class="grid md:grid-cols-5 gap-12 items-center">
+      <div class="md:col-span-3">
+        <h1 class="font-serif text-5xl md:text-6xl font-semibold leading-[1.05]">Hi, I'm Irena.</h1>
+        <p class="mt-3 text-accent font-medium">Author of The Gate of Ararich. YA fantasy, parallel worlds and magical adventures.</p>
+        <p class="mt-6 text-lg leading-relaxed text-ink/80 max-w-prose">I've always been drawn to fairy tales, fantasy, and the mysterious worlds that exist beyond the boundaries of ordinary imagination. I'm a lawyer by profession, so my days are spent in the realities of the material world. Writing lets me step through an unseen doorway into worlds where magic, adventure, and the impossible come alive.</p>
+        <p class="mt-4 text-lg leading-relaxed text-ink/80 max-w-prose">With a lifelong fascination for other realms and extraordinary characters, I invite you to follow two teenagers on a journey beyond everything they have ever known. Perhaps every extraordinary journey begins with nothing more than the courage to face the unknown.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="book.html" class="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-ink transition-colors">Meet the book</a>
+          <a href="contact.html" class="px-6 py-3 rounded-full font-medium border border-ink/20 hover:border-accent hover:text-accent transition-colors">Get in touch</a>
+        </div>
+      </div>
+      <img src="images/author.jpg" alt="Portrait of Irena" class="md:col-span-2 w-64 md:w-full max-w-sm mx-auto rounded-2xl bg-ink/10 aspect-[4/5] object-cover">
+    </section>
+
+    <section class="mt-24 bg-white rounded-2xl p-8 md:p-12 grid md:grid-cols-5 gap-10 items-center">
+      <img src="images/cover.jpg" alt="Cover of The Gate of Ararich" class="md:col-span-1 w-40 mx-auto shadow-xl rounded bg-ink/10 aspect-[2/3] object-cover">
+      <div class="md:col-span-4">
+        <h2 class="font-serif text-3xl font-semibold">The Gate of Ararich</h2>
+        <p class="mt-2 italic text-ink/70">Two Chosen Teens. One Dangerous Secret Across Worlds.</p>
+        <p class="mt-4 text-lg leading-relaxed text-ink/80 max-w-prose">What if you found an artifact that could transport you to distant planets and parallel worlds? What would be waiting for you there?</p>
+        <a href="book.html" class="inline-block mt-5 font-medium text-accent underline underline-offset-4">Read the full description</a>
+      </div>
+    </section>
+  </main>
+  <footer class="max-w-5xl w-full mx-auto px-6 py-10 mt-auto text-sm text-ink/60 border-t border-ink/10 flex flex-wrap gap-4 justify-between">
+    <p>&copy; <span id="year">2026</span> Irena. All rights reserved.</p>
+    <p class="flex gap-6">
+      <a href="https://www.instagram.com/ivardikyan/" target="_blank" rel="noopener" class="hover:text-accent">Instagram</a>
+      <!-- Replace the # below with the Goodreads link when it's ready -->
+      <a href="#" target="_blank" rel="noopener" class="hover:text-accent">Goodreads</a>
+    </p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
